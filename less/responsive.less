@@ -1,0 +1,96 @@
+// out: ../css/responsive.css, sourcemap: true, compress: true
+@import "_mixin.less";
+@desktop-width: 1360px;
+@tablet-width: 768px;
+@sp-width: 480px;
+@media only screen and (max-width: @desktop-width) {
+  header {
+    #nav_global {
+      ul {
+        li {
+          margin-bottom: 20px;
+        }
+      }
+    }
+  }
+}
+//end desktop
+@media only screen and (max-width: @tablet-width) {
+  header {
+    display: block;
+
+    #logo {
+      float: none;
+      width: 100%;
+      padding: 20px;
+    }
+
+    #nav_global {
+      .nav_btn {
+        display: block;
+        height: 32px;
+        width: 32px;
+        position: fixed;
+        z-index: 99999;
+        top: 10px;
+        right: 15px;
+
+        span {
+          display: block;
+          height: 3px;
+          background: #333;
+          margin: 5px 0;
+          position: relative;
+          .transition(all, 100ms, ease-in);
+        }
+      }
+
+      .nav_btn_actived {
+        .midde {
+          opacity: 0;
+        }
+
+        span {
+          &:first-child {
+            .transform(rotate(45deg));
+            top: 8px;
+          }
+
+          &:last-child {
+            .transform(rotate(-45deg));
+            bottom: 8px;
+          }
+        }
+      }
+
+      ul {
+        display: block;
+        position: fixed;
+        width: 100%;
+        left: -100%;
+        .transition(all, 0.5s, ease-out);
+
+        li {
+          padding-left: 50px;
+        }
+
+        &.nav_actived {
+          left: 0;
+        }
+      }
+    }
+    .tel {
+      float: none;
+      width: 100%;
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      a {
+        padding: 5px;
+      }
+    }
+  }
+}
+//end tablet
+@media only screen and (max-width: @sp-width) {}
+//end sp
