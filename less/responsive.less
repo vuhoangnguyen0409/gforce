@@ -7,23 +7,40 @@
   header {
     #nav_global {
       ul {
-        padding-top: 20px;
+        padding-top: 25px;
+
         li {
-          margin-bottom: 20px;
+          margin: 15px 0 3px;
         }
       }
+    }
+  }
+
+  .direction {
+    .direction_des {
+      padding-top: 0;
     }
   }
 }
 //end desktop
 @media only screen and (max-width: @tablet-width) {
+  .inner {
+    max-width: 100%;
+    padding: 0 10px;
+  }
+
   header {
     display: block;
 
     #logo {
       float: none;
+      position: fixed;
+      z-index: 9999;
+      top: 0;
+      left: 0;
       width: 100%;
       padding: 20px;
+      background-color: #fff;
     }
 
     #nav_global {
@@ -32,14 +49,14 @@
         height: 32px;
         width: 32px;
         position: fixed;
-        z-index: 99999;
-        top: 15px;
+        z-index: 9999;
+        top: 13px;
         right: 15px;
 
         span {
           display: block;
           height: 3px;
-          background: #333;
+          background-color: #333;
           margin: 5px 0;
           position: relative;
           .transition(all, 100ms, ease-in);
@@ -67,26 +84,31 @@
       ul {
         display: block;
         position: fixed;
+        z-index: 9998;
+        top: 30px;
         width: 100%;
         left: -100%;
         .transition(all, 0.5s, ease-out);
 
         li {
-          padding-left: 50px;
+          padding: 5px 0 10px 50px;
         }
 
         &.nav_actived {
-          background: rgba(230, 230, 230, 0.8);
+          background: rgba(230, 230, 230, 0.9);
           left: 0;
         }
       }
     }
+
     .tel {
       float: none;
       width: 100%;
       position: fixed;
+      z-index: 99999;
       bottom: 0;
       left: 0;
+
       a {
         padding: 5px;
       }
@@ -97,10 +119,60 @@
   -------------------------*/
   .banner {
     .banner_intro {
-      margin-left: 0;
+      margin: 0 auto;
+      padding: 30px 20px;
+    }
+  }
+  .direction {
+    padding: 70px 0;
+    figure,
+    .direction_des {
+      float: none;
+      width: 100%;
+      .office,
+      .submit_btn {
+        margin: 15px 0;
+      }
     }
   }
 }
 //end tablet
-@media only screen and (max-width: @sp-width) {}
+@media only screen and (max-width: @sp-width) {
+  .cars {
+    .cars_des {
+      h3 {
+        font-size: 24px;
+      }
+
+      .cars_txt {
+        margin: 10px 0;
+      }
+    }
+
+    .valuation {
+      .val_text {
+        display: inline-block;
+        margin-bottom: 5px;
+
+        &:first-child {
+          margin-right: 0;
+        }
+      }
+
+      .submit_btn {
+        margin: 10px auto;
+      }
+    }
+  }
+
+  .sticky {
+    width: 40px;
+
+    li {
+      a {
+        width: 40px;
+      }
+    }
+  }
+}
 //end sp

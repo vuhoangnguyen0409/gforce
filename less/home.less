@@ -1,8 +1,12 @@
 // out: ../css/home.css, sourcemap: true, compress: true
-
+@import "_mixin.less";
+/*------------------------------
+banner
+-------------------------------*/
 .banner {
-  background: url(../img/home/banner.jpg) no-repeat center/cover;
+  background: url("../img/home/banner.jpg") no-repeat center/cover;
   padding: 160px 0;
+
   .banner_intro {
     max-width: 545px;
     margin-left: 60px;
@@ -11,33 +15,182 @@
     background: rgba(0, 0, 0, 0.55);
     text-align: center;
     color: #fff;
+
     h2 {
       font-size: 32px;
       text-transform: uppercase;
       margin-bottom: 30px;
-      &:after {
+
+      &::after {
         content: "";
         display: block;
         width: 50px;
         height: 2px;
         margin: 20px auto 0;
-        background: #fff;
+        background-color: #fff;
       }
     }
+
     p {
       margin-bottom: 30px;
       font-size: 17px;
       line-height: 1.5;
     }
-    .btn_red {
+  }
+}
+/*------------------------------
+cars
+-------------------------------*/
+
+.cars {
+  figure {
+    overflow: hidden;
+
+    img {
       display: block;
-      width: 220px;
-      margin: 0 auto;
-      padding: 14px 5px;
-      background: #ce181e;
-      color: #fff;
-      text-align: center;
-      text-transform: uppercase;
+      width: 100%;
+      .transition(all, 0.5s, linear);
+
+      &:hover {
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+      }
     }
   }
+
+  .cars_des {
+    text-align: center;
+    color: #fff;
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+
+    h3 {
+      font-size: 30px;
+      text-transform: uppercase;
+      margin-bottom: 15px;
+    }
+
+    .cars_txt {
+      margin-bottom: 45px;
+    }
+  }
+
+  .valuation {
+    .val_text {
+      display: inline-block;
+      margin-bottom: 5px;
+
+      input[type=text] {
+        background: none;
+        border: 1px solid #fff;
+        width: 214px;
+        height: 41px;
+        line-height: 39px;
+        padding: 0 0 0 15px;
+      }
+
+      &:first-child {
+        position: relative;
+        margin-right: 20px;
+        padding-left: 25px;
+
+        &::before {
+          content: "";
+          height: 41px;
+          width: 27px;
+          position: absolute;
+          top: 0;
+          left: 0;
+          background: url("../img/common/icon-gb.png");
+        }
+      }
+    }
+  }
+}
+/*------------------------------
+direction
+-------------------------------*/
+.direction {
+  padding: 120px 0;
+
+  figure {
+    float: left;
+    width: 51%;
+  }
+
+  .direction_des {
+    padding-top: 70px;
+    float: right;
+    width: 38.1%;
+
+    h4 {
+      font-size: 30px;
+      line-height: 1.3;
+      text-transform: uppercase;
+      margin-bottom: 20px;
+    }
+
+    .postcode {
+      .submit_btn {
+        margin-left: 0;
+      }
+    }
+
+    .office {
+      margin-top: 60px;
+      display: flex;
+      align-items: center;
+
+      .office_detail {
+        margin-left: 25px;
+
+        b {
+          display: block;
+          font-size: 17px;
+          text-transform: uppercase;
+          margin-bottom: 20px;
+        }
+
+        span {
+          font-size: 16px;
+          color: #dadada;
+        }
+      }
+    }
+  }
+}
+/*------------------------------
+video
+-------------------------------*/
+
+.video {
+  height: 640px;
+  background: url("../img/home/img-video.jpg") no-repeat center/cover;
+  padding-top: 130px;
+  color: #fff;
+
+  .txt_intro {
+    h3 {
+      font-size: 30px;
+      text-transform: uppercase;
+      line-height: 1.3;
+      margin-bottom: 25px;
+    }
+
+    p {
+      margin-bottom: 40px;
+    }
+  }
+}
+/*------------------------------
+video
+-------------------------------*/
+
+.dealer {
+  background: #1c1c1c;
+  padding: 80px 0 100px;
+  color: @white;
 }
