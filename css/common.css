@@ -176,14 +176,12 @@ strong, .bold { font-weight:bold; }
 .inlineBlockList dd,
 .inlineBlockList li {
 	display:inline-block;
-	/display:inline;
+	display:inline;
 	padding-right:5px;
-	zoom:1;
 }
 
 /* DlLine styles
 -------------------------------------------------------------------*/
-.dlLine { zoom:1; }
 .dlLine dt {
 	float:left;
 	margin-right:10px;

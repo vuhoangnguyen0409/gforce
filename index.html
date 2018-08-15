@@ -3,7 +3,7 @@
 
 <head>
 	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width initial-scale=1.0 maximum-scale=1.0 user-scalable=yes" />
+	<meta name="viewport" content="width=device-width initial-scale=1.0 user-scalable=yes" />
 	<meta name="keywords" content="" />
 	<meta name="description" content="" />
 	<title>Gforce Test_vuhoangnguyen</title>
@@ -35,21 +35,24 @@
 					<li class="actived"><a href="#">home</a></li>
 					<li><a href="#">new cars</a></li>
 					<li><a href="#">used cars</a></li>
-					<li><a href="#">business & vans</a></li>
+					<li><a href="#">business &amp; vans</a></li>
 					<li><a href="#">offers</a></li>
-					<li><a href="#">servicing & parts </a></li>
+					<li><a href="#">servicing &amp; parts </a></li>
 					<li><a href="#">finance</a></li>
 					<li><a href="#">motability</a></li>
 					<li><a href="#">contact us</a></li>
 				</ul>
 			</nav>
-			<p class="tel"><a href="tel:000225555330">Call Us<span>000225555330<i class="fa fa-phone"></i></span></a></p>
+			<p class="tel">
+				<a href="tel:000225555330" class="pc_appear">Call Us<span>000225555330<i class="fa fa-phone"></i></span></a>
+				<a href="tel:000225555330" class="sp_appear"><span><i class="fa fa-phone"></i></span></a>
+			</p>
 		</header>
 		<!-- end header-->
 
 		<div id="content">
 			<section class="banner">
-				<div class="inner">
+				<div class="banner-inner">
 					<div class="banner_intro">
 						<h2>the all new ########</h2>
 						<p>Elegant on the outside, intelligent on the inside, and invigorating to drive.</p>
@@ -66,7 +69,7 @@
 								<img src="img/home/img-car01.jpg" alt="new cars">
 							</figure>
 							<div class="cars_des">
-								<h3>new cars</h3>
+								<h3 class="sub_tit">new cars</h3>
 								<p class="cars_txt">Discover the new car range</p>
 								<a class="button btn_view" href="#">view new cars</a>
 							</div>
@@ -76,7 +79,7 @@
 								<img src="img/home/img-car02.jpg" alt="used cars">
 							</figure>
 							<div class="cars_des">
-								<h3>used cars</h3>
+								<h3 class="sub_tit">used cars</h3>
 								<p class="cars_txt">Explore our approved used cars</p>
 								<a class="button btn_view" href="#">view new cars</a>
 							</div>
@@ -86,7 +89,7 @@
 								<img src="img/home/img-car03.jpg" alt="latest offers">
 							</figure>
 							<div class="cars_des">
-								<h3>latest offers</h3>
+								<h3 class="sub_tit">latest offers</h3>
 								<p class="cars_txt">Discover our latest offers and promotions</p>
 								<a class="button btn_view" href="#">view new cars</a>
 							</div>
@@ -96,7 +99,7 @@
 								<img src="img/home/img-car04.jpg" alt="Finance">
 							</figure>
 							<div class="cars_des">
-								<h3>Finance</h3>
+								<h3 class="sub_tit">Finance</h3>
 								<p class="cars_txt">Affordable, flexible finance solutions</p>
 								<a class="button btn_view" href="#">view new cars</a>
 							</div>
@@ -106,9 +109,9 @@
 								<img src="img/home/black.jpg" alt="">
 							</figure>
 							<div class="cars_des">
-								<h3>vehicle Valuation</h3>
+								<h3 class="sub_tit">vehicle Valuation</h3>
 								<p class="cars_txt">Get a free valuation of your vehicle</p>
-								<form class="valuation" action="" method="">
+								<form class="valuation" action="#" method="POST">
 									<p class="val_text"><input type="text" name="vehicle_reg" placeholder="Enter Vehicle Red"></p>
 									<p class="val_text"><input type="text" name="vehicle_mileage" placeholder="Enter Vehicle Mileage"></p>
 									<p class="button btn_view submit_btn"><input type="submit" value="GET VALUATION" id="submit" /></p>
@@ -120,7 +123,7 @@
 								<img src="img/home/img-car05.jpg" alt="book a service">
 							</figure>
 							<div class="cars_des">
-								<h3>book a service</h3>
+								<h3 class="sub_tit">book a service</h3>
 								<p class="cars_txt">Arrange your next MOT or service online today</p>
 								<a class="button btn_view" href="#">view new cars</a>
 							</div>
@@ -130,10 +133,10 @@
 			</section>
 			<!-- end cars-->
 			<section class="direction">
-				<div class="inner clearfix">
+				<div class="banner-inner clearfix">
 					<figure><img src="img/home/img-tower.jpg" alt=""></figure>
 					<div class="direction_des">
-						<h4>get directions to the<br>Dealer name showroom</h4>
+						<h3 class="sub_tit">get directions to the<br>Dealer name showroom</h3>
 						<p class="note">Enter your postcode below to locate our dealership.</p>
 						<form class="postcode">
 							<input type="text" name="postcode" value="" placeholder="Enter your Postcode">
@@ -148,9 +151,9 @@
 			</section>
 			<!-- end direction-->
 			<section class="video">
-				<div class="inner">
+				<div class="banner-inner">
 					<div class="txt_intro">
-						<h3>why choose A VEHICLE<br>dealer name?</h3>
+						<h3 class="sub_tit">why choose A VEHICLE<br>dealer name?</h3>
 						<p>Find out why customers choose Dealer Name.</p>
 						<a class="button btn_red" href="#">about us</a>
 					</div>
@@ -158,21 +161,37 @@
 			</section>
 			<!-- end video-->
 			<section class="dealer">
-				<h3 class="sub_tit">Welcome to dealer name</h3>
-				<div class="flex_box">
-					<div class="flex_item">
-						<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. </p>
-						<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. </p>
-						<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. </p>
-						<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. </p>
-						<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. </p>
-					</div>
-					<div class="flex_item">
-						<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, </p>
-						<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, </p>
-						<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, </p>
-						<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, </p>
-						<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, </p>
+				<div class="inner">
+					<h3 class="sub_tit">Welcome to dealer name</h3>
+					<div class="flex_box">
+						<div class="flex_dealer">
+							<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium
+								quis, sem. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque
+								eu, pretium quis, sem. </p>
+							<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium
+								quis, sem. </p>
+							<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium
+								quis, sem. </p>
+							<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium
+								quis, sem. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque
+								eu, pretium quis, sem. </p>
+							<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium
+								quis, sem. </p>
+						</div>
+						<div class="flex_dealer">
+							<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium
+								quis, sem. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque
+								eu, pretium quis, sem. </p>
+							<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium
+								quis, sem. </p>
+							<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium
+								quis, sem. </p>
+							<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium
+								quis, sem. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque
+								eu, pretium quis, sem. </p>
+							<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium
+								quis, sem. </p>
+						</div>
 					</div>
 				</div>
 			</section>
@@ -186,17 +205,44 @@
 		</div>
 		<!-- end content-->
 		<footer>
-			<nav id="nav_footer"></nav>
-			<div class="footer_content"></div>
+			<nav id="nav_footer">
+				<ul class="inner">
+					<li><a href="#">company info</a></li>
+					<li><a href="#">terms &amp; conditions</a></li>
+					<li><a href="#">privacy policy</a></li>
+					<li><a href="#">site map</a></li>
+				</ul>
+			</nav>
+			<div class="footer_main">
+				<div class="inner">
+					<div class="flex_box">
+						<div class="left footer_box">
+							<h5>© 2017 dealer name</h5>
+							<ul>
+								<li>Area, Town , City, Postcode.</li>
+								<li>Reg Office: Lorem ipsum dt, g elit. Aenean commodo ligula eget dolor. </li>
+								<li>Reg. Company Number: XXXXX</li>
+								<li>VAT Reg. No. XXXXXXXX</li>
+							</ul>
+						</div>
+						<div class="right footer_box">
+							<h5>Financial Disclosure</h5>
+							<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolm ipsum dolor sit amet, consectetuer adipiscing elit. Aenean g elit. Aenean commodo ligulcommodo ligula eget dolor.</p>
+							<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolm ipsum dolor sit amet, consectetuer adipiscing elit. Aenean g elit. Aenean.
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
 		</footer>
 		<!-- end footer-->
 	</div>
 	<!-- /#wrapper -->
 	<!-- js -->
-	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
 	<!-- jQuery -->
-	<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
-	<script type="text/javascript" src="js/script.js"></script>
+	<script src="js/jquery-1.8.3.min.js"></script>
+	<script src="js/script.js"></script>
 </body>
 
 </html>

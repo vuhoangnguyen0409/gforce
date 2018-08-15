@@ -3,7 +3,7 @@
 @desktop-width: 1360px;
 @tablet-width: 768px;
 @sp-width: 480px;
-@media only screen and (max-width: @desktop-width) {
+@media screen and (max-width: @desktop-width) {
   header {
     #nav_global {
       ul {
@@ -19,11 +19,29 @@
   .direction {
     .direction_des {
       padding-top: 0;
+
+      .postcode {
+        text-align: center;
+      }
     }
   }
 }
 //end desktop
-@media only screen and (max-width: @tablet-width) {
+@media screen and (max-width: @tablet-width) {
+  .pc_appear {
+    display: none;
+  }
+
+  .sp_appear {
+    display: block;
+  }
+
+  h3.sub_tit {
+    font-size: 27px;
+    margin-bottom: 35px;
+  }
+
+  .banner-inner,
   .inner {
     max-width: 100%;
     padding: 0 10px;
@@ -103,14 +121,20 @@
 
     .tel {
       float: none;
-      width: 100%;
+      width: 50px;
       position: fixed;
       z-index: 99999;
-      bottom: 0;
+      top: 0;
       left: 0;
 
       a {
-        padding: 5px;
+        padding: 17px 5px;
+
+        span {
+          i {
+            margin-left: 0;
+          }
+        }
       }
     }
   }
@@ -123,27 +147,55 @@
       padding: 30px 20px;
     }
   }
+
   .direction {
     padding: 70px 0;
-    figure,
-    .direction_des {
+
+    .direction_des,
+    figure {
       float: none;
       width: 100%;
+
       .office,
       .submit_btn {
-        margin: 15px 0;
+        margin: 15px auto !important;
       }
     }
   }
+
+  .dealer {
+    padding: 70px 0;
+  }
 }
 //end tablet
-@media only screen and (max-width: @sp-width) {
+@media screen and (max-width: @sp-width) {
+  .flex_box {
+    display: block;
+  }
+
+  .sticky {
+    width: 40px;
+
+    li {
+      a {
+        width: 40px;
+      }
+    }
+  }
+
+  .footer_main {
+    .footer_box {
+      text-align: left !important;
+      margin-bottom: 50px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
   .cars {
     .cars_des {
-      h3 {
-        font-size: 24px;
-      }
-
       .cars_txt {
         margin: 10px 0;
       }
@@ -165,13 +217,17 @@
     }
   }
 
-  .sticky {
-    width: 40px;
+  .dealer {
+    .flex_dealer {
+      width: auto;
+      padding-left: 0 !important;
+      padding-right: 0 !important;
+    }
+  }
 
-    li {
-      a {
-        width: 40px;
-      }
+  .video {
+    .txt_intro {
+      margin-left: 0;
     }
   }
 }
