@@ -1,0 +1,296 @@
+@clientFolder                                           : "../../02. Clients/xxx (S)/less";
+.direction-mixin(padding-left; );
+/*  ==========================================================================
+    Misc
+    ========================================================================== */
+
+@icon_font-version                                      : "3-glyph";
+@vars__module--gubagoo-version                          : false;
+
+@grid__light-grey--background                       : @vars__brand-tertiary-background_offset;
+@grid__grey--background                             : @vars__brand-tertiary-background;
+@grid__highlight--background                        : @vars__brand-primary-background;
+
+/*  ==========================================================================
+    Header
+    ========================================================================== */
+
+@header__background                                     : rgba(0, 0, 0, 0.5);
+@lg-header__background                                  : @header__background;
+@header__max-width                                      : none;
+@header__height                                         : 90px;
+@header__height-scrolling                               : 60px;
+
+@header__bar--contact-icon-left                         : true;
+@header__bar--contact-icon-right                        : false;
+@md-header__menu--line-height                           : @header__height;
+@md-header__menu--position                              : static;
+@md-header__container-r6z94--border-top                 : 1px solid @vars__light-grey-color;
+@md-header__container-r6z94--border-bottom              : 1px solid @vars__light-grey-color;
+
+@lg-header__container--padding-right                    : 30px;
+@lg-header__container--padding-left                     : 30px;
+
+@xl-header__r6z94-container--max-width                  : none;
+
+@lg-header__images-list                                 : "logo img" 175px, "franchise-badge img" 160px;
+
+@logo--margin-xs                                        : 5px auto;
+@lg-homepage__home-banner--top-transistion              : true;
+
+/*  ==========================================================================
+    Bar
+    ========================================================================== */
+
+@header__bar--line-height-sm                            : 44px;
+@header__social-icons--color-sm                         : #2d96cd;
+@header__bar-icon--font-size                            : 23px;
+@header__bar--background-sm                             : @vars__brand-primary-color;
+@header__bar--font-size-sm                              : 15px;
+@header__bar--font-weight-sm                            : 700;
+@header__bar--color-sm                                  : @vars__brand-primary-color;
+@header__bar-icon--color-sm                             : @vars__brand-secondary-color;
+@contact-numbers--color                                 : #b4b4b4;
+@header__bar--item-padding-md                           : 2px 10px;
+
+/*  ==========================================================================
+    Nav
+    ========================================================================== */
+
+@nav__link--font-size-md                                : 11px;
+@nav__link--font-size-lg                                : 15px;
+@nav__link--font-weight                                 : 500;
+@nav__link--color-md                                    : #2d96cd;
+@nav__link--text-transform                              : uppercase;
+@nav__link--padding-lg                                  : 0;
+@nav__link--color_hover-md                              : @nav__link--color-md;
+@nav__link--color_current-md                            : @nav__link--color-md;
+@nav__link--box-shadow-color                            : @nav__link--color-md;
+@nav__link--padding-md                                  : 0 10px;
+@nav__link--padding-lg                                  : 0 20px;
+@nav__link--padding-xl                                  : 0;
+@nav__link--margin-lg                                   : 0 8px;
+
+//
+@nav__dropdown-link--font-size                           : 14px;
+@nav__dropdown-link--color-md                              : #000;
+@nav__dropdown-link--color_hover-md                        : @vars__brand-tertiary-color;
+@nav__dropdown-link--background-md                       : #fff;
+@nav__dropdown-link--background_hover-md                   : @vars__brand-tertiary-background_offset;
+@nav__dropdown-link--border                             : 1px solid #ddd;
+
+/*  ==========================================================================
+    Sidebar
+    ========================================================================== */
+
+@sidebar__quick-links--background-color                 : @vars__brand-secondary-background;
+@sidebar__item--background-color                        : #fff;
+@sidebar__item--background-color-highlighted            : @sidebar__item--background-color;
+@sidebar__item--font-size                               : 18px;
+@sidebar__item--color                                   : #fff;
+@sidebar__item--text-transform                          : none;
+@sidebar__row--border-color                             : 1px solid #eee;
+@sidebar__item--height                                  : 45px;
+@sidebar__item--width                                   : 200px;
+@sidebar__item--padding                                 : 0 0 0 56px;
+@sidebar__social--width-hover                           : 256px;
+@sidebar__items                                         : "contact-button" @icon__phone, "find-us" @icon__map-pin, "social-icons" @icon__social, "valuation" @icon__wallet, "service" @icon__cogs;
+@sidebar__icon--font-size                               : 34px;
+// Quick links
+@sidebar__quick-links--width                            : 40px;
+@sidebar__quick-links--left                             : -40px;
+@sidebar__quick-links--height                           : 128px;
+@sidebar__quick-links-span--color                       : #fff;
+@sidebar__quick-links-span--left                        : -22px;
+@sidebar__quick-links--text-transform                   : uppercase;
+@sidebar__quick-links--font-weight                      : 700;
+//
+@sidebar__item--color                                   : #777;
+@sidebar__item--background-color-hover                  : #fff;
+@sidebar__quick-links-span--text-transform              : none;
+@sidebar__quick-links-span--font-size                   : 16px;
+@sidebar__quick-links-span--font-weight                 : 400;
+@sidebar__quick-links-span--letter-spacing              : 1.5;
+@sidebar__quick-links-span--background                  : @vars__brand-primary-background;
+
+@sidebar__quick-links-span--left                        : -22px;
+@rating__sidebar--horizontal-position-left              : true;
+
+/*  ==========================================================================
+	Footer
+	========================================================================== */
+
+@footer__pre-footer--background                         : @vars__brand-secondary-background;
+@footer__pre-footer--border-top                         : 1px solid #444;
+@footer__pre-footer__site-link--font-size               : 15px;
+@footer__pre-footer__site-link--font-weight             : 700;
+@footer__pre-footer__icon--font-size                    : 12px;
+@footer__pre-footer__icon--font-weight                  : 700;
+@footer__pre-footer__site-link--text-transform          : uppercase;
+@footer__pre-footer__toggle-company--marin-left         : 20px;
+@footer__pre-footer__social-icons-marign-right          : 20px;
+@footer__pre-footer__social-icons-padding-right         : 20px;
+@lg-footer__pre-footer__social-icons-border-right       : 1px solid #444;
+@pre-footer--line-height                                : 80px;
+
+@footer__background                                     : @footer__pre-footer--background;
+@footer__link--text-decoration                          : none;
+//
+@ndcc_footerPlaceholder--bottom_sm                       : 10px;
+@ndcc_footerPlaceholder--bottom_lg                       : 8px;
+@ndcc_footerPlaceholder--right_lg                        : 40px;
+
+/*  ==========================================================================
+	Advert
+	========================================================================== */
+
+@lg-homepage__home-banner--top-transistion              : true;
+@lg-homepage__banner-position                           : 'static';
+@lg-homepage__wrap--padding-top                         : 0;
+@lg-homepage__wrap--margin-top                          : 132px;
+@lg-homepage__banner-caption-inset--margin-top          : 0;
+//
+@lg-homepage__banner-title--font-size                   : 50px;
+@adverts__title--font-family                            : @vars__base--font-family;
+@adverts__title--font-size                              : 30px;
+@lg-homepage__banner-title--letter-spacing              : 1.5px;
+@adverts__title--transform                              : none;
+@adverts__title--font-weight                            : 600;
+
+@adverts__sub-title--font-size                          : 25px;
+@lg-homepage__banner-sub-title--font-size               : 60px;
+@adverts__sub-title--font-weight                        : 600;
+@adverts__sub-title--transform                          : none;
+@adverts__sub-title--line-height                        : 1.3;
+@adverts__sub-title--padding                            : 5px 0;
+@adverts__sub-title--max-width                          : 515px;
+@adverts__ul--font-size                                 : 16px;
+@adverts__ul--padding                                   : 25px 0 22px;
+@adverts__ul__li--margin-bottom                         : 3px;
+@adverts__button--margin-top                            : 10px;
+@lg-homepage__banner-caption-inset--margin-top          : 55px;
+@sm-homepage__banner-caption-max-width                  : 1170px;
+@xl-homepage__banner-caption-max-width                  : 1367px;
+@homepage__banner__caption--left                        : 40%;
+@sm-homepage__banner__caption--left                     : 60%;
+
+@lg-homepage__pagination--bottom                        : 60px;
+@homepage__banner-pager-link--background                : none;
+@homepage__banner-pager-link-active--background         : #fff;
+@homepage__banner-pager-link--border                    : 1px solid #fff;
+@advert__cycle__pager-text-align                       : right;
+
+/*  ==========================================================================
+	Cycle
+	========================================================================== */
+
+@cycle__pager-item--padding           : 0 10px;
+@cycle__pager-link--background        : rgba(0,0,0,.1);
+@cycle__pager-link--background_hover  : @vars__brand-primary-background;
+@cycle__pager-link--height            : 11px;
+@cycle__pager-link--width             : 11px;
+@cycle__pager-link--box-shadow        : none;
+@cycle__pager-link--border            : none;
+@cycle-pager-bottom                   : 40px;
+
+@cycle__prev-next--width              : 40px;
+@cycle__prev-next--height             : 40px;
+@cycle__prev-next--line-height        : 37px;
+@cycle__prev--background              : @vars__brand-primary-background;
+@cycle__next--background              : @vars__brand-secondary-background;
+
+/*  ==========================================================================
+    Search
+    ========================================================================== */
+
+@header--search--font-size                              : 30px;
+
+@homepage__search__filter-background                    : @vars__brand-secondary-background;
+
+// More options
+@homepage__search-button-search-link--font-size         : 15px;
+@homepage__search-button-search-link--font-weight       : 400;
+@homepage__search-button-search-link--color             : #fff;
+// Search Stock
+@search__button--font-size                              : 14px;
+@search__button--font-weight                            : 400;
+@search__button--padding                                : 0 15px;
+@search__button--border                                 : 1px solid #fff;
+// Search vehicles
+@search__button--font-size                              : 14px;
+//
+@search__filter-heading-label--font-size                : 14px;
+@search__filter-heading-label--font-weight              : 400;
+@search__filter-heading-label--color                    : #222;
+
+@search__filter-heading-value--font-size                : 15px;
+@search__filter-heading-value--font-weight              : 400;
+@search__filter-heading-value--line-height              : 2;
+@search__filter-heading-value--color                    : @vars__brand-tertiary-color;
+// Budget
+@button__search--color                                  : #fff;
+@button__search--font-weight                            : 400;
+@button__search--background                             : @homepage__search__filter-background;
+@button__search--color                                  : @search__filter-heading-label--color;
+
+@homepage__search__filter-icon--color                   : #fff;
+
+@search__filter-heading--padding                        : 6px 10px;
+@search--border-color                                   : #ddd;
+@search__button--border-radius            : @vars__border-radius;
+@search__inner--border-radius             : @vars__border-radius;
+
+@search__option--color_hover                            : @vars__brand-primary-background;
+@search__option--background_hover                       : @vars__brand-secondary-background;
+@search__option--color_active                           : @bs-select__link--color-selected;
+@search__option--background_active                      : @bs-select__link--background-selected;
+
+/*  ==========================================================================
+    Used listing
+    ========================================================================== */
+
+@used-listing__inset-background                          : @vars__brand-secondary-background;
+@used-detail__fixed--background                          : @vars__brand-secondary-background;
+
+
+/*  ==========================================================================
+    jump
+    ========================================================================== */
+@vars__reset-text-span--padding
+
+/*  ==========================================================================
+    Featured Stock
+    ========================================================================== */
+
+@homepage__featured-stock-thumb--border                 : 0;
+@homepage__featured-stock-item--border                  : 1px solid @vars__light-grey-color	;
+@homepage__featured-stock-item--padding                 : 0 15px;
+@homepage__featured-stock-thumb--padding-sm             : 0;
+@cycle_pager--bottom                                    : 10px;
+@cycle_pager_item--background                           : none;
+@cycle_pager_item--border                               : 2px solid #e0e0e0;
+@cycle_pager_item--border-active                        : 0;
+
+@homepage__featured-stock-item--background              : @vars__brand-secondary-background;
+@homepage__featured-stock-text--color                   : #fff;
+@homepage__featured-stock-title--font-size              : 22px;
+@homepage__featured-stock-title--padding                : 10px 0;
+@homepage__featured-stock-price--font-size              : 17px;
+@homepage__featured-stock-details--font-size            : 14px;
+@homepage__featured-stock-details-cell--width           : auto;
+@homepage__featured-stock-button--display               : block;
+@homepage__featured-stock-button--border-top            : 1px solid @vars__light-grey-color;
+
+/*  ==========================================================================
+    Jump
+    ========================================================================== */
+@vars__reset-text-span--padding                         : 8px;
+
+/*  ==========================================================================
+    Media
+    ========================================================================== */
+
+@media__play--height                                    : 92px;
+@media__play--width                                     : 92px;
+@media__play--background                                : rgba(0, 0, 0, .75);
+@media__play--color                                     : #0b8ec0;

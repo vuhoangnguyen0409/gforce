@@ -1,0 +1,6 @@
+Print header logo
+/images/print-header.jpg
+
+
+Franchise-badge
+/images/edition/mercedes-benz/franchise-badge.png

@@ -1,0 +1,139 @@
+Classes Only Build Process
+
+1) Find JIRA Ticket > Assign 'Main' ticket to yourself (Click 'assign to me' in top right section) > Pick up 'Build' Sub Task
+2) Create Checklist
+	- Auto-E / Transact Build -> Collections Build
+	- Input Client Name (S)
+	- Input Site URL
+	- Input Project Manager Email Address
+	- Click Save Progress
+3) Within Sloth hover over Add > click on Add Project
+	- Input Client Name (S) (Example Crown Motors (S))
+	- Change White Label Version to V2
+	- Keep Project Type as Clients
+	- Input the client Hash (Check site is on the new asset strucuture first > Master Admin > Franchise Setup > CSS tab)
+	- Input Site URL
+	- Keep Bucket as V10
+	- Click Yep in bottom right of modal 
+4) Remove group.less from your newly created Sloth project
+5) Within Sloth hover Add > click on Add V10 Site
+	- Input Client Name (S) (Example Crown Motors (S))
+	- Input Site URL
+	- Input the client Hash
+	- Change Bucket to V10
+	-- Create respository
+6) Find newly created client folder within your 02. Clients folder
+7) Create a css folder within the first level of your client folder
+8) Delete all unneeded folders/files from less folder
+	- Keep group.less and franchise.less
+	- Keep group and franchise folder
+	- Keep common folder
+	- Keep login.less
+	- Keep print.less
+	- Keep print-pdf.less
+	- Keep map.less
+9) Drag all needed less files into client project in Sloth
+10) Apply hash to all files
+11) Check upload path is correct for group.less
+12) Remove .min from login, map, print and print-pdf (Example: should be login.css not login.min.css)
+13) Compile and Upload all files
+14) Within Backend > Assets > Click Deploy to get live assets applied to site
+15) Delete all unneeded folders/files from images folder
+	Keep the below:
+	- ico folder
+	- loaders folder
+	- ncap folder
+	- reevoo folder
+	- whatcar folder
+	- no-images folder
+	- uploads folder (remove all folder within and create a folder to hold your psd images that you cut out)
+	- ajax-loading.gif
+	- fuel-calc-bg.png
+	- hpi-logo.png
+	- icon-reevoo.png
+	- ieBgFix.gif
+	- login-logo.png
+	- logo.png
+	- motability.png
+	- motability-scale.png
+	- parallax-newcar.jpg
+	- parallax-recruitment.jpg
+	- print-header.jpg
+	- reevoo-bg-png
+	- used-detail-finance.png
+	- valuations-bg.png
+	- whatcar-bg.png
+
+	Keep the below IF your site has franchises
+	- badges folder (Delete out the franchise-badges that aren't relevant to your build)
+	- editions folder (Delete out the folders that aren't relevant to your build)
+	- franchise-badge.png
+	- franchise-badge-sprite.png
+	- franchise-badge-sprite.psd
+
+	Delete below unless you are told they are needed
+	- advanced-dropdown folder
+	- be folder
+	- ford folder
+	- layout folder
+	- opel folder
+	- pennellum folder
+	- pl folder
+	- renault folder
+	- seat folder
+	- showroom folder
+	- skoda folder
+	- suzuki folder
+	- volkswagen folder
+
+
+16) Cut out logo from psds and save out as logo.png
+17) Create 256px by 256px favicon and save within ico folder as 256-favicon
+18) Create franchise-badge-sprite (if site has franchises)
+19) Use Sloths Automated Image Replacer using the logo.png and 256-favicon.png
+20) Check all images are correct and fix any that aren't (ico, no-images, login-logo and print-header - specially print-header)
+21) Create images folder within Sloth > drag all remaining files from clients images folder into Sloth
+22) Create nd-client-logo-alt and send to Chris Kent (Make sure logo stays within the guides > Ctrl + ; ) + (save copy within client folder)
+23) Create 600px by 100px Email Banner similar to Print Header and save out as a GIF and send to Mentor (save copy within client folder)
+
+SVN upload, drag all images to Sloth, add project to Atom
+
+24) Add print-header.jpg into used pdf template
+	- If group only need main logo (change module to no-span)
+	- If franchise have main logo as span-10 and franchise image module as span-2 (Use franchise logos from badges folder)
+25) Update group folder variables, mixins and font files from downloaded UI kit
+26) Update this variable @clientFolder : "../../02. Clients/client-name (S)/less"; within common/variables.less
+27) Extract all imagery from psds (if not given assets folder) and save within uploads folder + BULK COMPRESS +upload into media gallery
+28) Apply all Collections stated from psds (Ignoring anything custom > shown in red on wireframe.psd)
+29) Update modules with imagery and content
+30) Add classes to match psds as close as possible ( http://master.auto.gforcestestlink.co.uk/alan-parsons/global-core/#/ )
+31) Ask Mentor to review collections and classes you have used
+32) If there are issues, spend time amending them + review again
+33) Once signed off, repeat the collection/classes process for the franchise if you have one
+34) Ask Mentor to review
+35) If there are issues, spend time amending them + review again
+36) Once signed off > Export Sloth Project
+37) You are finished on this build
+
+
+
+
+Hi all,
+Please be aware that from this point forwards I want to try a new way of building sites. This new approach will allow you all to fully understand collections and the classes that power them, without getting held up with custom styles and simplifying the process of building sites.
+
+So, started immediately can you start to use the new checklist titled “Collections Build” instead of “Full Collections Build”. From there you will only need to complete Steps 1 to 5. Your mentor or another member of the UK office will then work with the design team to:
+1.	Style in any custom styles (not part of collections)
+2.	Add animations – Working in collaboration with the Design team
+3.	Device, browser, function and area tests
+4.	Design Review
+
+Your job will include:
+1.	Initial design and build review
+2.	Ui Kit
+3.	Collections setup
+4.	Asset creation
+
+
+You will not be required to create any custom styles.
+
+Also, the Photoshop files will highlight the areas of the design that are custom so you can concentrate on the collections.

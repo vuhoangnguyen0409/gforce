@@ -1,0 +1,103 @@
+-----------------------------------------------------
+Jump
+	js-group reset theme--basic
+
+	top-left: text--align-self-start text--justify-left
+	center-center: text--align-self-center text--justify-center
+	center-left: text--align-self-center text--justify-left
+	bottom-left: text--align-self-end text--justify-left align-left
+	
+	40: .responsive-font-calc(33px; 38px);
+	37: .responsive-font-calc(27px; 34px);
+
+-----------------------------------------------------
+Transition
+	transition: all @vars__transition--speed @vars__transition--timing-function;
+
+-----------------------------------------------------
+Variables should try to follow the FEP (@file__element--property_modifier) : @cms__table--border-left   @nav__arrow--position-right
+
+
+-----------------------------------------------------
+	Bar icons
+
+		.icon:before {
+            content: @icon__cogs;
+
+		&:before {
+            .set-icon(@icon__phone, 26px);
+			.set-icon(@icon__chevron-right, 26px);
+        }
+		https://manufacturer-branding.auto.gforcestestlink.co.uk/iconography/
+
+-----------------------------------------------------
+Search, Filter
+	%total_section_vehicle_count%
+	fill-container-light-grey
+
+Budget
+	Auto-e -> homepage -> Edit listing template -> copy container 8
+	Hawco -> create container -> paste
+
+
+-----------------------------------------------------
+Animation
+	partial/animation.less
+
+-----------------------------------------------------
+Direction mixn
+	Text Align
+	Border
+	Float
+	Margin
+	Padding: left and right
+	absolute: left and right
+
+
+
+@grid__light-grey--background;
+@grid__grey--background;
+@grid__highlight--background;
+
+#layout-mixin() {
+
+   ._fill(@breakpoint: ~"") {
+
+       & when (@breakpoint = ~"") {
+
+           .container-wrap {
+
+               &.new-color-example.inverted {
+                   background-color: red;
+               }
+           }
+       }
+   }
+}
+
+#layout-mixin() {
+
+   ._title(@breakpoint: ~"") {
+
+       .strapline--highlight@{breakpoint} {
+
+           .strapline {
+               color: @vars__strapline-highlight--color;
+           }
+       }
+
+       .title--highlight@{breakpoint} {
+
+           .titte {
+               color: @vars__title-highlight--color;
+           }
+       }
+
+       .content--highlight@{breakpoint} {
+
+           .content {
+               color: @vars__content-highlight--color;
+           }
+       }
+   }
+}

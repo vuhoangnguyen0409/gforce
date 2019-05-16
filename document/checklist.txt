@@ -1,0 +1,18 @@
+check until Step 4 Testing
+Mater Admin > Franchise setup -> Login screen Off
+Run Test 2
+Submit
+Login screen ON
+
+
+main ticket
+So you see where it says MHCheck
+hover on it and click on the icon that appears
+Now you should be able to enter a new label
+ADD CSSQA
+then click off of the area
+Then click the more info tab
+and in the comments write Ready for QA and then the more info button in the bottom right of that modal
+then thats the build phase officially complete
+
+Please can you Pick Up Ticket, then Resolve. You can add a comment such as: CSS Stage 1 complete, checklist submitted.

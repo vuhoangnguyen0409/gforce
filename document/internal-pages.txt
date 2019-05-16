@@ -1,0 +1,47 @@
+Used car/van Listing
+Used car/van Detail
+
+New car/van Listing (Not group)
+New car/van Detail (Not group)
+
+CAP New car/van offers listing (Not group)
+CAP New car/van offers detail (Not group)
+
+Contact/Location Listing
+Contact/Location Detail
+
+--------------------------------------------------------------------------
+Should be using the Global Core auto-e
+
+- Used car/ Used Vans
+	CSS editor is running correclty > Settings icon > Import Template > 13-ajax used-listing used global-core
+	Latest timestamp variables
+ 
+- Used car detail / Used Vans detail
+	Import Template 14 core auto-e
+	Enquire Now  ->  Used Car Enquiry
+  
+- Edit Form Template
+	Import Template 04 form used global-core
+  
+--------------------------------------------------------------------------
+  
+- New Cars ( If group has franchises : copy franchise badge from homepage to new car and offer), New Cars Offers
+	Import Template
+	Admin -> new-cars -> copy ListingLayout
+	
+	Admin -> CAP new car offer-> copy ListingLayout
+	global core 04 
+  
+--------------------------------------------------------------------------
+
+- Contact listing
+	Admin -> contact-us -> copying the #content-wrap and pasting it over your client one
+
+- Contact detail 
+	Import template
+	Button link: Value my Vehicle
+	
+- Cap New Car Offers
+	CAP New Car Offers campaign details page
+	

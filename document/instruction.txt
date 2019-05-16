@@ -1,0 +1,95 @@
+-----------------------------------------------------
+netdirector.co.uk
+-----------------------------------------------------
+	RATIO
+-----------------------------------------------------
+1:1		1
+4:3		1.333
+3:4		0.75
+3:2		1.5
+2:3		0.666
+16:9	1.77
+9:3		3
+7:2		3.5
+11:5	2.2
+
+rgb(255, 255, 255)
+
+
+-----------------------------------------------------
+	Common phrases
+-----------------------------------------------------
+http://css-help-guide.wordpress.gforcestestlink.co.uk/css-dictionary/common-phrases/
+
+Demo
+http://master.auto.gforcestestlink.co.uk/
+http://master.auto.gforcestestlink.co.uk/alan-parsons/
+
+https://www.boothsofditton-peugeot.co.uk/
+https://clover-leaf.auto.gforcestestlink.co.uk/
+https://croyland-autoe.auto.gforcestestlink.co.uk/
+http://editions.master.citroen.auto.gforcestestlink.co.uk/
+
+
+
+
+
+
+-----------------------------------------------------
+	CSS CLASS
+-----------------------------------------------------
+http://master.auto.gforcestestlink.co.uk/alan-parsons/global-core/#/cheatsheet
+http://master.auto.gforcestestlink.co.uk/alan-parsons/global-core/#/collections
+http://css-help-guide.wordpress.gforcestestlink.co.uk/
+
+
+
+-----------------------------------------------------
+	VARIBALE
+-----------------------------------------------------
+Variables should be placed within the common/variables.less
+Variables that are specific to a franchise need to be placed in the relevant franchise-name/variables.less
+
+
+-----------------------------------------------------
+	MIXIN
+-----------------------------------------------------
+common/mixins.less, nested within #custom-mixins()
+
+
+-----------------------------------------------------
+	Fontastic
+-----------------------------------------------------
+http://app.fontastic.me/#select/RKVHAoXFS989DK54JpTZLV
+New Font in top right
+adds a new "Untitled Font" for the dropdown
+Modify Font
+Change the font name to the client
+"Add More Icons" right at the top of the page
+"Import Icons" button
+Go back to the homepage
+See a "New Set"
+Rename this New Set to match the font we created
+Menu dropdown right > Change Set Name
+Make sure font name is correct in top dropdown
+Click on the icon you want
+Customize tab
+Character Mapping - use c001
+publish tab -> Download
+create new folder called fonts (next to less, images and css folders) -> paste icon files within there
+drag the icon files into that sloth folder
+(you dont need the svg file)
+Scaffolding > icons.less
+Rename the variable to match you icon
+I normally got for @custom-icon__????
+
+if you have multiple just copy the same thing underneath and change the name and mapping value
+
+uncomment the Font Import code
+
+Replace each "client-name" with the name of each icon file
+So yours is morrison-motors-s
+
+Import that same name into the @vars__base--icon-family                            : "morrison-motors-s", "master-v10";
+If you have franchises you may need to move this variable into you common variables.less
+content: @custom-icon__???

@@ -1,0 +1,77 @@
+-----------------------------------------------------
+	ADMIN
+-----------------------------------------------------
+
+Admin Client: Search box -> the client name: Hawco Group -> NetDirector Auto v10 -> Auto-e Redesign 2018
+Master admin -> Assets -> Use development bucket for assets files - ON
+Master admin -> Site sections: edit
+Homepage -> Site links -> menu footer
+Marketing -> Top navigatiion: nav
+
+
+-----------------------------------------------------
+Advert
+-----------------------------------------------------
+Advert managment: advert
+Page -> Homepage -> Banners -> Add another
+
+
+-----------------------------------------------------
+JS
+-----------------------------------------------------
+Tag management
+
+
+-----------------------------------------------------
+Franchise css path
+-----------------------------------------------------
+Franchise setup -> css ON
+
+
+-----------------------------------------------------
+Email banner
+-----------------------------------------------------
+admin
+stock
+group management
+setting
+Client name
+united kingdom
+Email banner
+
+
+-----------------------------------------------------
+Contact number
+-----------------------------------------------------
+Add button
+Button type: Toggle
+Toggle ID: toggle--contact-numbers
+
+----------------------------------------------------------------------------------------------------------
+
+Franchise badges
+https://hawco-2018.auto.gforcestestlink.co.uk/
+
+
+Featured-stock, homepage-jump
+https://crown-2018.auto.gforcestestlink.co.uk/
+
+
+Background img css
+https://midulstercars.auto.gforcestestlink.co.uk/
+
+
+Vehicle Registration, fit-screen
+https://richardnash.auto.gforcestestlink.co.uk/
+
+Valuation
+https://richardnash.auto.gforcestestlink.co.uk/
+
+Location search
+https://sbcommercials.auto.gforcestestlink.co.uk/
+
+
+
+
+
+
